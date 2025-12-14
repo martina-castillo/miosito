@@ -836,6 +836,20 @@ padding: 10px;
     transform: translateX(8px);
 }
 
+.footer-contacts {
+    text-align: right;
+}
+
+.footer-contacts a{
+    display: inline;
+    margin: 0;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.footer-contacts a:hover{
+    transform: translate(-3px);
+}
 
 /*PULSANTE SCROLL TO TOP*/
 .scroll-to-top {
