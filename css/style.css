@@ -1,7 +1,7 @@
 body {
     margin: 0;
     text-align: left;
-    font-family: Quicksand;
+    font-family: Nunito;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 100%;
@@ -274,7 +274,7 @@ main p{
     border-radius: 10px;
     font-weight: bold;
     font-size: 0.8em;
-    padding: 10px 100px;
+    padding: 10px 80px;
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     width: 100%;
@@ -1482,6 +1482,54 @@ html {
         width: 350px;
         height: 350px;
     }
+}
+
+@media (max-width: 450px){
+    h1, h2, h3, .section-title, .menu-da-dove-vengo h2{
+    font-size: 0.8rem;
+}
+
+p, li, .nav-menu a, .menu-label, .design-image-caption {
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+
+main p{
+    margin-bottom: 10px;
+}
+   
+/*COSA FACCIO*/
+.content-bubble {
+    width: 360px;
+    height: 360px;
+}
+
+.content-bubble h3 {
+    padding-top: 30px;
+}
+
+.button-unirsm {
+    font-size: 0.7em;
+    padding: 10px 70px;
+}
+
+/*ARCHITETTURE VICINE*/
+.image-bubble-small {
+    width: 85px; 
+    height: 85px;
+}
+
+/*PROGETTI E WORKSHOP*/
+.progetto-image {
+  width: 150px;
+  height: 150px;
+}
+
+/*HOBBY*/
+.hobby-image-wrapper {
+    width: 130px;
+    height: 130px;
+}
 }
 
 @keyframes bounce {
