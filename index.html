@@ -470,6 +470,18 @@
         </div>
 
     </div>
+     <div class="footer-contacts">
+    <p>
+        <a href="https://www.instagram.com/martinacastiillo_/" target="_blank" class="footer-link">
+            Instagram: @martinacastiillo_
+        </a> 
+        </p>
+        <p><a href="mailto:martinarayen.castillo@gmail.com" class="footer-link">
+            Email: martinarayen.castillo@gmail.com
+        </a>
+    </p>
+</div>
+    
 </footer>
 
 <button class="scroll-to-top" id="scrollToTop" aria-label="Torna su">
@@ -537,7 +549,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Osserva solo gli effetti che usi
     const animatedElements = document.querySelectorAll(
         '.fade-in-up, .fade-in-left, .fade-in-right, .bounce-in, .stagger-item'
     );
@@ -545,7 +556,6 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach(el => observer.observe(el));
 
     
-    // 2. MENU - Smooth scroll e hamburger
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     const allScrollLinks = document.querySelectorAll('.nav-menu a, .main-footer a[href^="#"]');
@@ -585,11 +595,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // SCROLL TO TOP BUTTON
 const scrollToTopBtn = document.getElementById('scrollToTop');
+const footer = document.querySelector('.main-footer');
 
 window.addEventListener('scroll', () => {
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    
     if (window.pageYOffset > 300) {
         scrollToTopBtn.classList.add('visible');
     } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+    
+    if (footerRect.top <= windowHeight) {
         scrollToTopBtn.classList.remove('visible');
     }
 });
