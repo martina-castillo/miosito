@@ -766,6 +766,7 @@ padding: 10px;
     padding: 30px 20px;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .footer-row-top {
@@ -839,10 +840,8 @@ padding: 10px;
 .footer-contacts {
     text-align: right;
     margin-top: 30px;
-    position: absolute;
     bottom: 50px;
     right: 20px;
-    text-align: right;
 }
 
 .footer-contacts a{
