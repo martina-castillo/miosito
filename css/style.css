@@ -838,6 +838,11 @@ padding: 10px;
 
 .footer-contacts {
     text-align: right;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    text-align: right;
 }
 
 .footer-contacts a{
