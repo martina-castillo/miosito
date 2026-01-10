@@ -3,7 +3,6 @@ body {
     text-align: left;
     font-family: 'Nunito', sans-serif;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     max-width: 100%;
 }
 
@@ -60,9 +59,8 @@ main p{
         box-sizing: border-box;
     }
 
-.logo {
-    font-size: 2em;
-    font-weight: bold;
+.logo-image {
+    height: 40px;
 }
 
 .menu-toggle {
@@ -354,8 +352,8 @@ main p{
 }
 
 .image-bubble {
-    width: 240px; 
-    height: 240px; 
+    width: 200px; 
+    height: 200px; 
     border-radius: 50%;
     overflow: hidden;
     margin: 0;
@@ -1479,8 +1477,8 @@ html {
     
     /*architetture*/
     .image-bubble{
-        width: 450px;
-        height: 450px;
+        width: 350px;
+        height: 350px;
     }
 
     /*design*/
