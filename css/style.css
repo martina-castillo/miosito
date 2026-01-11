@@ -4,20 +4,20 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: white;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+html{
+    overflow-x: hidden;
 }
 
 h1, h2, h3, .section-title, .menu-da-dove-vengo h2{
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 p, li, .nav-menu a, .menu-label, .design-image-caption {
-    font-size: 0.9rem;
-    line-height: 1.2rem;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 main p{
@@ -139,7 +139,7 @@ main p{
 
 .submenu a {
     padding: 10px 20px;
-    font-size: 0.9em;
+    font-size: 16px;
     border-top: none;
 }
 
@@ -228,40 +228,50 @@ main p{
     width: 100%;
 }
 
+.cosa-faccio-section .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.cosa-faccio-section .row {
+    margin: 0;
+}
+
+.cosa-faccio-section .col-12 {
+    padding: 0;
+}
+
 .content-bubble {
     color: white;
-    padding-top: 50px;
-    padding-right: 40px;
-    border-radius: 50%;
-    width: 430px;
-    height: 430px;
+    padding: 60px 40px;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     box-sizing: border-box;
     margin-left: auto; 
     margin-right: auto;
     margin-bottom: 40px;
     background-color: #4962C7;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
-.content-bubble:hover{
-    transform: scale(1.1);
-	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
-}
 .content-bubble h3 {
     color: white;
     margin-top: 0;
-    padding-top: 50px;
     padding-bottom: 10px;
+    text-align: left;
+    width: 100%;
 }
 
 .content-bubble p {
     padding-bottom: 20px;
+    text-align: left;
+    width: 100%;
 }
 
 .button-unirsm {
@@ -271,13 +281,14 @@ main p{
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 0.8em;
-    padding: 10px 80px;
+    font-size: 14px;
+    padding: 10px 20px;
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     width: 100%;
     text-align: center;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .button-unirsm:hover {
@@ -296,6 +307,8 @@ main p{
 .menu-da-dove-vengo{
     box-sizing: border-box;
     text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .menu-da-dove-vengo h2 {
@@ -317,13 +330,12 @@ main p{
 .paesaggio-visivo-section {
     position: relative;
     padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 .text-paesaggio-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .text-paesaggio {
@@ -348,7 +360,7 @@ main p{
 .image-bubble-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .image-bubble {
@@ -613,7 +625,7 @@ main p{
 
 /*$QUAM€*/
 .squame-title {
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: bold;
     color: #4962C7; 
     margin-bottom: 10px;
@@ -774,8 +786,8 @@ padding: 10px;
 .main-footer a {
     color: white;
     text-decoration: none;
-    font-size: 0.9rem;
-    line-height: 1.2rem;
+    font-size: 16px;
+    line-height: 22px;
     display: block;
     padding: 10px 0;
 }
@@ -790,7 +802,7 @@ padding: 10px;
 
 .main-footer strong {
     display: block;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -997,6 +1009,33 @@ html {
 }
 
 /*MEDIA QUERIES*/
+@media (min-width: 450px){
+    .content-bubble {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    padding: 40px 70px;
+}
+}
+
+.content-bubble:hover{
+    transform: scale(1.1);
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.content-bubble h3{
+    padding-top: 20px;
+}
+
+@media (min-width: 600px){
+    .content-bubble {
+        width: 520px;
+        height: 520px;
+        padding: 90px 100px;
+    }
+}
+
 @media (min-width: 760px) {
     /*header e menu di navigazione*/
     .header {
@@ -1230,8 +1269,8 @@ html {
     margin-bottom: 0; 
     }
     .design-fonti-header-wrapper::before {
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
     }
 
     .design-fonti-content-row {
@@ -1430,6 +1469,27 @@ html {
 }
 
 @media (min-width: 1000px){
+    h1, h2, h3, .section-title, .menu-da-dove-vengo h2 {
+        font-size: 22px;
+    }
+
+    p, li, .nav-menu a, .menu-label, .design-image-caption {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .submenu a {
+        font-size: 16px;
+    }
+
+    .main-footer strong {
+        font-size: 20px;
+    }
+
+    .main-footer a {
+        font-size: 17px;
+        line-height: 24px;
+    }
     .design-image-circle {
         width: 180px;
         height: 180px;
@@ -1461,14 +1521,30 @@ html {
     .footer-submenu {
     display: block;
     }
-
-    .main-footer strong,
-    .main-footer a {
-        padding: 0;
-    }
 }
 
 @media (min-width: 1350px) {
+    h1, h2, h3, .section-title, .menu-da-dove-vengo h2 {
+        font-size: 24px;
+    }
+
+    p, li, .design-image-caption {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .squame-title {
+        font-size: 22px;
+    }
+
+    .main-footer strong {
+        font-size: 22px;
+    }
+
+    .main-footer a {
+        font-size: 18px;
+        line-height: 26px;
+    }
     /*chi sono*/
     .profile-image{
         width: 400px;
@@ -1500,35 +1576,8 @@ html {
     }
 }
 
+
 @media (max-width: 450px){
-    h1, h2, h3, .section-title, .menu-da-dove-vengo h2{
-    font-size: 0.8rem;
-}
-
-p, li, .nav-menu a, .menu-label, .design-image-caption {
-    font-size: 0.7rem;
-    line-height: 1rem;
-}
-
-main p{
-    margin-bottom: 10px;
-}
-   
-/*COSA FACCIO*/
-.content-bubble {
-    width: 360px;
-    height: 360px;
-}
-
-.content-bubble h3 {
-    padding-top: 30px;
-}
-
-.button-unirsm {
-    font-size: 0.7em;
-    padding: 10px 70px;
-}
-
 /*ARCHITETTURE VICINE*/
 .image-bubble-small {
     width: 85px; 
@@ -1547,6 +1596,7 @@ main p{
     height: 130px;
 }
 }
+
 
 @keyframes bounce {
     0% { transform: translateY(0); }
